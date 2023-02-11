@@ -1,5 +1,5 @@
 # Firebase-emulator-docker
-Multi-platform and simple to use Firebase emulator Docker container
+[Multi-platform and simple to use Firebase emulator Docker container](https://hub.docker.com/r/kpetrikas/firebase-emulator)
 
 # Environment configuration attributes
 * `PROJECT_ID`: ID of Firebase project, prefix with `demo-` to [make sure no live resources are being used](https://firebase.google.com/docs/emulator-suite/connect_auth#choose_a_firebase_project).
