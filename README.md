@@ -1,2 +1,2 @@
 # firebase-emulator-docker
-Multi-platform Firebase emulator Docker container
+Multi-platform and simple to use Firebase emulator Docker container
