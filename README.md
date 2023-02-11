@@ -10,7 +10,7 @@ Multi-platform and simple to use Firebase emulator Docker container
 |---------|--------|
 |auth     | 9099   |
 |firestore| 8080   |
-|pubub    | 8085   |
+|pubsub   | 8085   |
 |storage  | 9199   |
 |database | 9000   |
 |functions| 5001   |
