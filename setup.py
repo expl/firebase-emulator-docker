@@ -4,6 +4,7 @@ from typing import Optional, List
 
 HOST = "0.0.0.0"
 
+# To add new emulated services simply add new entries here with their port numbers
 EMULATOR_PORTS = {
     "auth": 9099,
     "firestore": 8080,
@@ -26,6 +27,9 @@ BASE_CONF = {
 
 
 def setup_firebaserc(project_id: str):
+    """
+    Create `.firebaserc` file with project ID set
+    """
     json.dump(
         {
             "projects": {
@@ -37,6 +41,9 @@ def setup_firebaserc(project_id: str):
 
 
 def setup_firebasejson(emulators: List[str]):
+    """
+    Create `firebase.json` configuration file based on emulator selection from environment
+    """
     for emulator in emulators:
         port: Optional[int] = EMULATOR_PORTS.get(emulator, None)
 
@@ -52,6 +59,9 @@ def setup_firebasejson(emulators: List[str]):
 
 
 def setup():
+    """
+    Read environment configuration and output Firebase configuration files
+    """
     project_id: Optional[str] = os.getenv("PROJECT_ID", None)
 
     if project_id is None:
