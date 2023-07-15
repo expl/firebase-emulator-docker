@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-ENV FIREBASE_TOOLS_VERSION="11.22.0"
+ENV FIREBASE_TOOLS_VERSION="11.25.2"
 ENV HOME=/home/node
 
 RUN apk update
